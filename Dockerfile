@@ -3,9 +3,7 @@ FROM n8nio/n8n:latest
 
 # Set working directory
 WORKDIR /home/node
-
-# Optional: copy custom files or workflows
-# COPY ./data /home/node/.n8n
+COPY ./data /home/node/.n8n
 
 # Cloud Run runs on port 8080
 ENV N8N_PORT=8080
